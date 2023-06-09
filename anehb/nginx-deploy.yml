@@ -16,7 +16,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: goofapp-deployment
   namespace: argocd
   labels:
     app: nginx-app
