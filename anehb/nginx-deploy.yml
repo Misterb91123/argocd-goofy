@@ -10,8 +10,8 @@ spec:
     type: front-end
   ports:
     - port: 80
-      targetPort: 80
-      nodePort: 30011
+      targetPort: 3000
+      nodePort: 30012
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -34,5 +34,5 @@ spec:
         type: front-end
     spec:
       containers:
-        - name: nginx-container
-          image: nginx:latest
+        - name: goof-container
+          image: bkimminich/juice-shop
